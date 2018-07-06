@@ -4,6 +4,11 @@
 
 int main(){
   int s1, s2;
+  char name[100];
+
+  printf("What is your name?\n>");
+  scanf("%s",name);
+  printf("Hello, %s!\n",name);
  
   srand(time(NULL));
  
@@ -14,10 +19,9 @@ int main(){
   printf("Die 1: %d\nDie 2: %d\n",s1,s2);
   printf("Total value: %d\n",s1+s2);
 
-  if((s1+s2) > 7) printf("You won!\n");
-  else printf("You lost!\n");
-  
   return 0;
 }
 
 //https://github.com/s1250125/Dice-Game.git
+
+
